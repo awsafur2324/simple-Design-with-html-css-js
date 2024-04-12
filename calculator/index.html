@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./asset/style.css" />
+  </head>
+  <body>
+    <div class="container holder p-3">
+      <h2 class="text-center p-3 myFont fw-bold">My Calculator</h2>
+
+      <form
+        id="form"
+        class="d-flex flex-column justify-content-center align-items-center"
+      >
+        <div class="input-group myFont font-bold">
+          <span class="input-group-text fw-bolder">Result : </span>
+          <input
+            id="result"
+            class="form-control p-3 text-center"
+            type="text"
+            placeholder=""
+            disabled
+          />
+        </div>
+
+        <div class="d-flex flex-wrap gap-3 flex-glow-1 mt-4">
+          <div class="form-floating mb-3 flex-fill">
+            <input
+              type="text"
+              class="form-control"
+              id="inp1"
+              placeholder=""
+              required
+            />
+            <label for="floatingInput"> Enter a number</label>
+          </div>
+          
+          <div class="form-floating mb-3 flex-fill">
+            <input
+              type="text"
+              class="form-control"
+              id="inp2"
+              placeholder=""
+              required
+            />
+            <label for="floatingInput"> Enter another number</label>
+          </div>
+          
+        </div>
+        <p id="inpError" class="text-start text-danger"></p>
+        <div class="p-2">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-danger dropdown-toggle p-3"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Choose Operations
+            </button>
+            <ul class="dropdown-menu p-3">
+              <li id="add" class="dropdown-item">Addition( + )</li>
+              <li id="sub" class="dropdown-item">subtraction( - )</li>
+              <li id="mal" class="dropdown-item">multiplication( x )</li>
+              <li id="div" class="dropdown-item">division( &#247; )</li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center text-danger" id="error"></p>
+        <input
+          class="btn btn-primary p-2 px-3"
+          type="submit"
+          value="Calculate"
+        />
+      </form>
+    </div>
+
+    <script src="./asset/js/bootstrap.bundle.min.js"></script>
+    <script src="./asset/Myjs.js"></script>
+    <script></script>
+  </body>
+</html>

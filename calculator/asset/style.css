@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tilt+Neon&display=swap');
+
+.myFont {
+    font-family: "Tilt Neon", sans-serif;
+}
+
+.holder{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    border: 1px solid #00000054;
+    box-shadow: 2px 3px 10px 15px #00000017;
+}
+
+.active{
+    color: blue;
+}
